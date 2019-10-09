@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    background-color: white;
+    margin: 0;
+    padding: 1px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.header>img {
+    max-width: 300px;
+    width: 20%;
+    height: auto;
+    padding: 1px;
+}
+
+.navbar {
+    background-color: rgba(86, 127, 21, 0.82);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content {
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+}
+
+.content .row .column {
+    width: 100%;
+    height: 25%;
+}
+
+.content .row .column>img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Extra small devices (phones, 600px and down)*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+    .content .row .column>img {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*Large devices (laptops/desktops, 992px and up)*/
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: white;
+        font-size: 20px;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        background-color: white;
+        margin: 0;
+        padding: 1px;
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        float: right;
+    }
+    .header>img {
+        max-width: 400px;
+        width: 20%;
+        height: auto;
+        padding: 1px;
+    }
+    .navbar {
+        height: 100%;
+        width: 10%;
+        position: fixed;
+        overflow: hidden;
+        float: left;
+        background-color: rgba(86, 127, 21, 0.82);
+    }
+    .navbar a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .content {
+        padding: 1px;
+        text-align: center;
+        width: 90%;
+        height: 60%;
+        float: right;
+    }
+    .content .row .column {
+        width: 50%;
+        height: 50%;
+        float: left;
+        padding: 1px;
+    }
+    .content .row .column>img {
+        max-width: 420px;
+        width: 100%;
+        height: auto;
+    }
+    .footer {
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        float: right;
+    }
+}
